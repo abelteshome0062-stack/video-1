@@ -1,13 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Video Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Style Video</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .video-container {
+            width: 100%;
+            max-width: 400px;
+            background: #000000;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        }
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <h1>Watch My Video</h1>
-    <video width="100%" controls>
-      <source src="0eebb5a423ef1b8db4b2b6abe5413052_1787945753238.mp4" type="video/mp4">
-      ድረ-ገጽዎ ቪዲዮውን መደገፍ አልቻለም።
-    </video>
+    <div class="video-container">
+        <video controls autoplay loop>
+          <source src="0eebb5a423ef1b8db4b2b6abe5413052_1787945753238.mp4" type="video/mp4">
+          ድረ-ገጽዎ ቪዲዮውን መደገፍ አልቻለም።
+        </video>
+    </div>
 </body>
 </html>
